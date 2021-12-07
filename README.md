@@ -1,4 +1,4 @@
-The python script calculates the transmission of double-bounce monochromator illuminated by a train of XFEL pulses. The methodology is described in [1]. The published notebook calculates the transmission for the parameters in [1].
+The python script calculates the transmission of double-bounce monochromator illuminated by a train of XFEL pulses. The methodology is described in [1]. The published notebook and the output figures are for 9keV photon energy, Si(111) reflection, 1 mJ pulses, 550 micrometer FWHM beamsize, 100 K initital temperature and 2.25 MHz repetition rate.
 
 The .dat files contain the following parameters of silicon:
 "alpha_si.dat": linear expansion coefficient [2]
