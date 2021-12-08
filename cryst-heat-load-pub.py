@@ -123,9 +123,9 @@ def depth_flow_heat(args):
 #         deform_T = np.interp(T_pulse_z[0],T_arr,deform_int)-deform_init
         pulse_energy = XGM_trend[ip]*transm_att*1e-6#+120e-6
         heat_pulse_ip_z = np.interp(T_pulse_z,T_arr,heat_int)-heat_0
+        T_pulse_surf_x[ip] = T_pulse_z[0]
         heat_pulse_ip_z+=xz_heat_rel_x*pulse_energy
         T_pulse_z = np.interp(heat_pulse_ip_z,heat_int-heat_0,T_arr)
-        T_pulse_surf_x[ip] = T_pulse_z[0]
     
     return (T_pulse_z,T_pulse_surf_x)
 
